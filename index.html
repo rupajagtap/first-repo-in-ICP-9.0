@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title> Reservation form</title>
+</head>
+<body>
+  <center>
+<div class="container">
+<h1>Travel reservation form</h1>
+<h3> denotes mandotory</h3>
+<form id="registration_form">
+<label>Full name:</label>
+<input type="text" name="full_name" placeholder="FirstName LastName" value=""><br><br>
+<label>Email address:</label>
+<input type="text" name="email_addr" value=""><br><br>
+<label>Address:</label>
+<input type="number" name="mobile" value=""><br><br>
+<label>Contact No:</label>
+<input type="text" name="ddr" value=""><br><br>
+<label>Select Tour Package :</label>
+<select name="package">
+<option value="5000" >5000</option>
+<option value="10000" >10000</option>
+<option value="15000" >15000</option>
+<option value="12000" >12000</option>
+<option value="9000" >9000</option>
+<option value="17000" >17000</option><br><br><br>
+ <label for="date"> Arrival Date:</label>
+<input type="date" id="date" required><br> <br>
+<label>Number of persons:</label>
+<input type="text" name="persons" value=""><br><br>
+<label>What would you want to avail?</label><br>
+  Boarding<input type="checkbox" name="facilities[]" value="boarding"  ><br>
+  Fooding<input type="checkbox" name="facilities[]" value="fooding"  ><br>
+  Sight seeing<input type="checkbox" name="facilities[]" value="sightseeing"  ><br><br>
+<label>Discount Coupon code:</label><br>
+<input type="text" name="dis_code" value=""><br><br>
+<label>Terms and conditions</label><br>
+<input type="radio" name="tnc" value="agree" checked>I agree
+<input type="radio" name="tnc" value="disagree" >I disagree<br><br>
+<button type="submit" class="btn btn-large btn-primary" name="submit">Complete reservation</button>
+</form>
+</div>
+</center>
+</body>
+</html>
